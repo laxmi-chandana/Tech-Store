@@ -10,10 +10,17 @@ class ProductProvider extends Component {
   state = {
     sidebarOpen: false,
     cartOpen: false,
-    cartItems: 2,
     links: LinkData,
     socialIcons: SocialData,
-    cart: []
+    cart: [],
+    cartItems: 0,
+    cartSubTotal: 0,
+    cartTax: 0,
+    storeProducts: [],
+    filteredProdcuts: [],
+    featuredProducts: [],
+    singleProduct: {},
+    loading: false
   };
   // handle sidebar
   handleSidebar = () => {

@@ -1,8 +1,8 @@
 import React from 'react'
 import Hero from '../components/Hero.js'
 import { Link } from "react-router-dom"
-
-
+import Services from "../components/HomePage/Services.js"
+import Featured from "../components/HomePage/Featured.js"
 export default function HomePage(){
     return(
         <>
@@ -15,6 +15,8 @@ export default function HomePage(){
                 our products
             </Link>
         </Hero>
+        <Services />
+        <Featured />
         </>
     )
 }
