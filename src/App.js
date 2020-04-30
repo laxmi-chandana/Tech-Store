@@ -22,18 +22,15 @@ export default class App extends React.Component{
         <NavBar />
         <SideBar />
         <SideCart />
-        <BrowserRouter>
-          <Switch>
-              <Route path ="/" exact component = {HomePage} />
-              <Route path ="/about" exact component = {AboutPage} />
-              <Route path ="/contact" exact component = {ContactPage} />
-              <Route path ="/products" exact component = {ProductsPage} />
-              <Route path ="/products/:id" exact component = {SingleProductsPage} />
-              <Route path ="/cart" exact component = {CartPage} />
-              <Route component = {DefaultPage} />
-          </Switch>
-        </BrowserRouter>
-        
+        <Switch>
+            <Route path ="/" exact component = {HomePage} />
+            <Route path ="/about" exact component = {AboutPage} />
+            <Route path ="/contact" exact component = {ContactPage} />
+            <Route path ="/products" exact component = {ProductsPage} />
+            <Route path ="/products/:id" exact component = {SingleProductsPage} />
+            <Route path ="/cart" exact component = {CartPage} />
+            <Route component = {DefaultPage} />
+        </Switch>
         <Footer />
 
       </>
